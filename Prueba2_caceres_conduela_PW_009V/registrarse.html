@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg" />
+    <title>Registrate Banco Programmer</title>
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+<body >
+    <!--titulo-->
+    <p id="span">Registrate con nosotros</p>
+    <div class="container"id="div" >
+       
+        <!--FORMULARIO-->
+        
+        <div class="form-row" >
+            <div class="col" >
+                <label>RUT*</label>
+                <input type="text" class="form-control" id="txt_rut">            
+            </div>
+            <div class="col" >
+                <label>Nombre*</label>
+                <input type="text" class="form-control" id="txt_nombre">            
+            </div> 
+        </div>       
+        <div class="form-row" >
+            <div class="col">
+                <label>Apellido paterno*</label>
+                <input type="text" class="form-control" id="txt_paterno">            
+            </div>
+            <div class="col">
+                <label>Apellido materno*</label>
+                <input type="text" class="form-control" id="txt_materno">
+            </div>
+        </div> 
+        <div class="form-row" >
+            <div class="col">
+                  <label>Correo electronico*</label>
+                  <input type="email" class="form-control" id="txt_email">            
+            </div>
+            <div class="col">
+                <label>Tipo cuenta*</label>
+                    <select class="form-control" id="cmb_cuenta">
+                        <option>Seleccione...</option>
+                        <option>Cuenta Rut</option>
+                        <option>Cuenta Vista</option>
+                        <option>Cuenta Corriente</option>
+                    </select>
+            </div> 
+        </div>
+        <div class="form-row" >
+            <div class="col">
+                    <label>Contraseña*</label>
+                    <input type="password" class="form-control" id="txt_contrena">            
+            </div>
+            <div class="col">
+                <label>Repetir Contraseña*</label>
+                <input type="password" class="form-control" id="txt_validar_conta">            
+            </div>
+        </div>
+        <br />
+        <button id="btn_limpiar" type="button" class="btn btn-primary">Limpiar</button> 
+        <button id="btn_registrar" class="btn btn-success">Registrarse</button>
+        <br />
+        <label id="lbl_registro" class="text-success"></label>
+        <br />
+        <br />
+        <label id="lbl_rut" class="text-success"></label>
+        <br />
+        <br />
+        <ul id="mensajes" class="text-danger"> </ul> 
+        <br/> 
+    </div> 
+
+
+    <!--footer-->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">                
+                        <div class="footer-pad">
+                            <h4>Informaciones</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Informaciones</a></li>
+                                <li><a href="#">Sucursales</a></li>
+                            </ul>
+                        </div>
+                    </div>            
+                    <div class="col-md-3">
+                        <h4>Síguenos en</h4>
+                        <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>                    
+                        </ul>				
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2021 - Banco Progammer. Todos los derechos reservados.</p>
+                        <p class="text-center">Diseñado por &copy;Pragrammer LTDA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/funciones.js"></script>
+</html>
