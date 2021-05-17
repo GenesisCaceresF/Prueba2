@@ -99,14 +99,14 @@ function fn_limpiar(){
 };
 /* funcion que trae la informacion economica y de la temperatura*/
 function informacion(){
-    $.getJSON('https://api.libreapi.cl/economy/indicators', function(result){      
-        infoeco = result; 
+    $.getJSON('https://api.libreapi.cl/economy/indicators', function(data){      
+        var infoeco = data; 
         $("#lbl_ecoInfo").text("Indicadores Economicos : Dólar: $"+Math.round(infoeco.data.dolar)+
         " - Euro: $"+Math.round(infoeco.data.euro)+" - UF: $"+Math.round(infoeco.data.uf));
       });
       
-      $.getJSON('https://api.libreapi.cl/weather/stations?name=Pudahuel%20Santiago',function(result){   
-        var temperatura = result; 
+      $.getJSON('https://api.libreapi.cl/weather/stations?name=Pudahuel%20Santiago',function(data){   
+        var temperatura = data; 
         $("#lbl_climas").text("Temperatura Actual: "+Math.round(temperatura.data[0].temperature)+"°");
       });
   };
